@@ -1,0 +1,376 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Montserrat', sans-serif;
+}
+button{
+    border: none;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 1em;
+}
+/* navbar */
+.overall-navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 5em 5em 6.5em 20em 5em 10em;
+    list-style: none;
+    background-color: aliceblue;
+    height: 5em;
+    align-items: center;
+    font-size:large;
+}
+.navbar span{
+    color: #d61c62;
+}
+.navbar li:hover{
+color: #0d6efd;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.navbar button{
+    height: 6vh;
+    width: 12vh;
+}
+.navbar button:hover{
+    background-color: #d61c62;
+}
+.navbar img{
+    margin-left: 6em;
+}
+/*Contact-content1*/
+.Contact-content1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.Contact-content1-text1{
+    margin: 5em;
+}
+.Contact-content1-text1 h1{
+    color: #0d6efd;
+    font-size: 40px;
+}
+.Contact-content1-text1 h3{
+    color: grey;
+    font-weight: 400;
+    padding-top: 1em;
+    font-size: 20px;
+}
+.Contact-content1-text1 p{
+    padding-top: 1em;
+    color: rgb(70, 66, 66);
+    font-size: 18px;
+}
+.Contact-content1-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+.Contact-content1-details1,.Contact-content1-details2{
+    background-color: rgb(239, 239, 239);
+    width: 18em;
+    border-radius: 1em;
+}
+.Contact-content1-details h2{
+    font-weight: 400;
+}
+
+.Contact-content1-details img{
+    height: 3em;
+    transform: translateY(-25px);
+}
+
+.Contact-content1-text2{
+    margin: 5em;
+}
+.Contact-content1-text2 h1{
+    color: #0d6efd;
+    font-size: 40px;
+}
+.Contact-content1-text2-NameandEmail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+}
+.Contact-content1-text2-Name,.Contact-content1-text2-Mail,.Contact-content1-text2-Subject,.Contact-content1-text2-Message{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1em;
+    color: grey;
+}
+.Contact-content1-text2 button{
+    height: 3em;
+    width: 20em;
+    border-radius: 2em;
+    font-size: 15px;
+    margin-top: 2em;
+}
+.Contact-content1-text2 button:hover{
+    background-color: #d61c62;
+}
+.Contact-content1-text2 input{
+    color: grey;
+    height: 3em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    border: 2px solid #d61c62;
+}
+.Contact-content1-text2 textarea{
+    color: grey;
+    border-color: #d61c62;
+    height: 7em;
+    border-radius: 0.5em; 
+    border-width: 2px;
+    margin-top: 1em;
+}
+.Contact-content1-text2 input:hover,.Contact-content1-text2 textarea:hover{
+    border-color: #0d6efd;
+}
+
+  /*Contact-content2*/
+  .Contact-content2{
+    background-image: url(./Home/BG-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 20vh;
+    width: 100%;
+}
+
+   /*footer*/
+   .footer{
+    background-image: url(./Home/BG-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 40vh;
+    width: 100%;
+}
+.footer hr{
+    width: 5em;
+    margin-top: 1em;
+}
+
+
+.footer ,.footer-part1-logos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+.footer-part1-logos{
+    display: flex;
+    justify-content:start ;
+}
+.footer-part1-logos img{
+    margin-top: 1em;
+    margin-left: 4em;
+    height: 2em;
+    width: 2em;
+}
+.footer-part1-logos img:hover{
+    transform: scale(0.8);
+}
+
+.footer-part1{
+    margin-top:4em ;
+    margin-left: 4em;
+}
+.footer-part2{
+      width: 50%;
+      margin-top: 5em;
+}
+.footer-part2 p{
+    margin-top: 2em;
+    color: grey;
+}
+.footer-part3{
+      width: 50%;
+      margin-top: 5em;
+      transform: translateX(-12em);
+}
+.footer-part3 p{
+    margin-top: 1.5em;
+    color: grey;
+}
+.footer-part4{
+    width: 80%;
+    margin-left: 5em;
+    color: rgb(70, 70, 72);
+}
+.footer-part4 strong{
+    color: #0d6efd;
+}
+
+
+
+
+
+
+
+
+/*Media Query*/
+@media (max-width: 768px) {
+    /* Adjust navbar layout */
+    .navbar {
+        grid-template-columns: 1fr 1fr 1fr; /* Stacks items in smaller columns */
+        height: auto;
+        text-align: center;
+    }
+
+    /* Make buttons smaller on mobile */
+    .navbar button {
+        width: 40vw; /* Adjust width to be more flexible */
+        height: 8vh; /* Make buttons a bit larger for touch */
+    }
+
+    /* Adjust navbar image size */
+    .navbar img {
+        margin-left: 0; /* Remove extra margin */
+        width: 80px; /* Resize logo for smaller screen */
+    }
+
+    /* Make navbar items more spaced out */
+    .navbar li {
+        padding: 0.5em 0;
+    }
+    
+    /* Reduce the font size of navbar items */
+    .navbar {
+        font-size: medium;
+    }
+    
+    /* Sticky navbar adjustments */
+    .overall-navbar {
+        position: relative; /* Remove sticky on mobile for better layout */
+    }
+
+    .navbar span{
+        color: #d61c62;
+    }
+    .navbar li:hover{
+    color: #0d6efd;
+    }
+    .navbar button{
+        height: 6vh;
+        width: 12vh;
+    }
+    .navbar button:hover{
+        background-color: #d61c62;
+    }
+}
+
+@media (max-width: 768px) {
+    .Contact-content1 {
+        display: block; /* Stack elements vertically */
+        text-align: center;
+    }
+
+    .Contact-content1-text1,
+    .Contact-content1-text2 {
+        margin: 2em; /* Reduce margin for better spacing */
+    }
+
+    .Contact-content1-details {
+        display: block; /* Stack contact details */
+    }
+
+    .Contact-content1-details1,
+    .Contact-content1-details2 {
+        width: 100%; /* Full width for small screens */
+        margin: 2em auto;
+    }
+
+    .Contact-content1-details img {
+        height: 2.5em; /* Adjust image size */
+    }
+
+    .Contact-content1-text2-NameandEmail {
+        display: block; /* Stack name and email inputs */
+    }
+
+    .Contact-content1-text2 input,
+    .Contact-content1-text2 textarea {
+        width: 100%; /* Full-width inputs */
+    }
+
+    .Contact-content1-text2 button {
+        width: 100%; /* Full-width button */
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        height: 80vh;  /* Adjust the height for mobile */
+    }
+    
+    .footer hr {
+        width: 5em;
+        margin-left: 2em;  /* Make the horizontal rule smaller */
+    }
+    
+    .footer,
+    .footer-part1-logos {
+        grid-template-columns: 1fr; /* Stack the content in one column */
+        text-align: center; /* Center the content */
+    }
+    
+    .footer-part1-logos {
+        justify-content: center;
+        margin-top: 1em; /* Add some spacing */
+    }
+    
+    .footer-part1-logos img {
+        margin-left: 0;  /* Remove large left margin */
+        height: 1.5em; /* Adjust the image size */
+        width: 1.5em;
+    }
+    .footer-part1-logos img:hover{
+        transform: scale(0.8);
+    }
+
+    .footer-part1 {
+        margin-top: 2em;
+        margin-left: 0; /* Remove large left margin */
+        text-align: center;
+    }
+
+    .footer-part2,
+    .footer-part3 {
+        width: 100%; /* Make both sections full width */
+        margin-top: 3em;
+        transform: none; /* Remove transform for alignment */
+    }
+
+    .footer-part2 p,
+    .footer-part3 p {
+        margin-top: 1em;
+        color: grey;
+        font-size: 0.9em; /* Adjust font size for readability */
+    }
+
+    .footer-part4 {
+        width: 90%; /* Adjust width for mobile screens */
+        margin-left: 0;
+        text-align: center;
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
+
+    .footer-part4 strong {
+        color: #0d6efd;
+    }
+}
+
+
+
