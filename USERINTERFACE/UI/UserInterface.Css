@@ -1,0 +1,415 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family:'Montserrat', sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-image: url(./User/BG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  background-attachment:fixed;
+}
+#profile {
+  max-width: 1000px;
+  height: 70%;
+}
+
+#profile h1 {
+  color: #0d6efd;
+  font-size: 40px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+ table {
+            margin: 20px auto;
+            width: 70%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+        }
+        th{
+   background-color: #d61c62;
+   color:white;
+}
+        td{
+        height:5em;
+        }
+        h2 {
+            text-align: center;
+        }
+
+
+.profile-details{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  height: 30em;
+  padding: 1em;
+  border-radius: 8px;
+  margin-left: 3em;
+  margin-top: 3em;
+}
+
+.profile-details-bg{
+width: 55em;
+height: 32em;
+margin-left: 2em;
+}
+
+.profile-details p {
+  font-size: 1.2em;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.profile-details label {
+  color: #0d6efd;
+  font-size: 20px;
+}
+.inputbox{
+padding: 8px;
+border: 2px solid #d61c62;
+border-radius: 5px;
+font-size: 14px;
+width: 80%;
+margin-top: 1em;
+}
+.profile-details input:hover{
+border: 2px solid #0d6efd;
+border-radius: 5px;
+}
+
+
+
+.sidebar {
+  margin-top: 2em;
+  width: 250px;
+  background-color:white;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  height: 87vh;
+  margin-left: 2em;
+  border-radius: 10px;
+  position: sticky;
+  top: 2em;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.profile p{
+  font-size: 130%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  padding-top: 2em;
+  height: 4em;
+  margin-left: 30px;
+}
+
+.profile {
+  text-align: center;
+  color: black;
+}
+
+.profile img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  margin-top: 40px;
+  color: #0d6efd;
+}
+
+
+.menu {
+  list-style: none;
+  margin-top: 2em;
+}
+
+.menu li {
+  margin: 15px 0;
+  cursor: pointer;
+  display: flex;
+  padding-top: 0.5em;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 150%;
+}
+.menu img{
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+.nav-profile{
+  background-color: #d61c62;
+  color: white;
+}
+
+.menu li:hover{
+  background-color: #d61c62;
+}
+.menu li.active{
+  background-color:#d61c62;
+}
+
+.menu li i {
+  margin-right: 10px;
+}
+
+/* Content Area */
+.content {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  margin-top: 2em;
+  margin-left: 1em;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: 87vh;
+  width: 70vw;
+}
+
+.content h2 {
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Adoption List */
+.pet-list {
+  margin-top: 10px;
+ 
+}
+
+
+.pet-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.pet-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.pet-card h3 {
+  color: #d61c62;
+}
+#deleteaccount,#signout{
+width: 40%;
+text-align: center;
+background-image: url(./User/BG-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+height: 20vh;
+padding-top: 2em;
+border-radius: 1em;
+margin-left: 20em;
+margin-top: 13em;
+animation: delete 1s;
+}
+.animate{
+overflow: hidden;
+}
+@keyframes delete{
+from{
+  transform: translateY(-500px);
+}
+to{
+  transform: translateY(0px);
+}
+
+} 
+#deleteaccount button ,#signout button{
+width: 7em;
+margin-left: 4em;
+}
+.but-no{
+background-color: red;
+}
+#deleteaccount h2 ,#signout h2{
+color: #d61c62;
+}
+.DeleteButton{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+/* Form Container */
+#postadoption {
+  width: 70vw;
+  padding: 1.5em;
+  border-radius: 1em;
+  height: 87vh;
+
+}
+form{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Form Title */
+#postadoption h2 {
+  text-align: center;
+  color: #0d6efd;
+  margin-bottom: 1em;
+}
+
+/* Three-Column Grid Layout */
+.post-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 1em;
+}
+
+/* Full-Width Inputs */
+.full-width {
+  grid-column: span 3; /* Takes full width */
+}
+
+/* Form Groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  color: grey;
+  font-weight: 600;
+  margin-top: 0.3em;
+}
+
+.form-group input,
+.form-group select{
+  padding: 8px;
+  border: 2px solid #d61c62;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 80%;
+}
+.form-group textarea {
+  padding: 8px;
+  border: 2px solid #d61c62;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 95%;
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+  border-color: #0d6efd;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  grid-column: span 3; /* Takes full width */
+}
+
+.checkbox-group input {
+  margin-right: 5px;
+}
+.checkbox-group label{
+  color: #d61c62;
+}
+/* Image Upload */
+.form-group input[type="file"] {
+  border: none;
+}
+
+
+
+/* Submit Button */
+.button-container {
+  grid-column: span 3;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #0d6efd;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40%;
+  margin-top: 1em;
+  margin-left: 25em;
+}
+
+button:hover {
+  background-color: #d61c62;
+}
+
+/* Mobile View */
+@media (max-width: 900px) {
+#postadoption {
+    width: 90%;
+}
+
+.post-form {
+    grid-template-columns: 1fr; /* Single column for mobile */
+}
+
+.full-width {
+    grid-column: span 1;
+}
+
+button {
+    width: 100%;
+}
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  body {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 100%;
+      text-align: center;
+  }
+
+  .sidebar a {
+      display: inline-block;
+      margin: 5px;
+  }
+}
+

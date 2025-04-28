@@ -1,0 +1,137 @@
+function nav_profile(){
+    let bg1=document.getElementById("nav-profile");
+    bg1.style.backgroundColor=("#d61c62");
+    bg1.style.color=("white");
+    let bg2=document.getElementById("nav-adoption");
+    bg2.style.backgroundColor=("white");
+    bg2.style.color=("Black");
+    let bg3=document.getElementById("nav-postadoption");
+    bg3.style.backgroundColor=("white");
+    bg3.style.color=("black");
+    let bg4=document.getElementById("nav-delete");
+    bg4.style.backgroundColor=("white");
+    bg4.style.color=("black");
+    let bg5=document.getElementById("nav-signout");
+    bg5.style.backgroundColor=("white");
+    bg5.style.color=("black"); 
+    let dis1=document.getElementById("profile");
+    dis1.style.display=("block");
+    let dis2=document.getElementById("adoption");
+    dis2.style.display=("none");
+    let dis3=document.getElementById("postadoption");
+    dis3.style.display=("none");
+    let dis4=document.getElementById("deleteaccount");
+    dis4.style.display=("none");
+    let dis5=document.getElementById("signout");
+    dis5.style.display=("none");
+    
+}
+function nav_adoption(){
+    let bg1=document.getElementById("nav-adoption");
+    bg1.style.backgroundColor=("#d61c62");
+    bg1.style.color=("white");
+    let bg2=document.getElementById("nav-profile");
+    bg2.style.backgroundColor=("white");
+    bg2.style.color=("Black");
+    let bg3=document.getElementById("nav-postadoption");
+    bg3.style.backgroundColor=("white");
+    bg3.style.color=("Black");
+    let bg4=document.getElementById("nav-delete");
+    bg4.style.backgroundColor=("white");
+    bg4.style.color=("Black");
+    let bg5=document.getElementById("nav-signout");
+    bg5.style.backgroundColor=("white");
+    bg5.style.color=("Black");
+    let dis1=document.getElementById("adoption");
+    dis1.style.display=("block");
+    let dis2=document.getElementById("profile");
+    dis2.style.display=("none");
+    let dis3=document.getElementById("postadoption");
+    dis3.style.display=("none");
+    let dis4=document.getElementById("deleteaccount");
+    dis4.style.display=("none");
+    let dis5=document.getElementById("signout");
+    dis5.style.display=("none");  
+}
+function nav_postadoption(){
+    let bg1=document.getElementById("nav-postadoption");
+    bg1.style.backgroundColor=("#d61c62");
+    bg1.style.color=("white");
+    let bg2=document.getElementById("nav-profile");
+    bg2.style.backgroundColor=("white");
+    bg2.style.color=("Black");
+    let bg3=document.getElementById("nav-adoption");
+    bg3.style.backgroundColor=("white");
+    bg3.style.color=("Black");
+    let bg4=document.getElementById("nav-delete");
+    bg4.style.backgroundColor=("white");
+    bg4.style.color=("Black");
+    let bg5=document.getElementById("nav-signout");
+    bg5.style.backgroundColor=("white"); 
+    bg5.style.color=("Black");
+    let dis1=document.getElementById("postadoption");
+    dis1.style.display=("block");
+    let dis2=document.getElementById("profile");
+    dis2.style.display=("none");
+    let dis3=document.getElementById("adoption");
+    dis3.style.display=("none");
+    let dis4=document.getElementById("deleteaccount");
+    dis4.style.display=("none");
+    let dis5=document.getElementById("signout");
+    dis5.style.display=("none");  
+}
+function nav_delete(){
+    let bg1=document.getElementById("nav-delete");
+    bg1.style.backgroundColor=("#d61c62");
+    bg1.style.color=("white");
+    let bg2=document.getElementById("nav-profile");
+    bg2.style.backgroundColor=("white");
+    bg2.style.color=("Black");
+    let bg3=document.getElementById("nav-adoption");
+    bg3.style.backgroundColor=("white");
+    bg3.style.color=("Black");
+    let bg4=document.getElementById("nav-postadoption");
+    bg4.style.backgroundColor=("white");
+    bg4.style.color=("Black");
+    let bg5=document.getElementById("nav-signout");
+    bg5.style.backgroundColor=("white");
+    bg5.style.color=("Black");
+    let dis1=document.getElementById("deleteaccount");
+    dis1.style.display=("block");
+    let dis2=document.getElementById("profile");
+    dis2.style.display=("none");
+    let dis3=document.getElementById("adoption");
+    dis3.style.display=("none");
+    let dis4=document.getElementById("postadoption");
+    dis4.style.display=("none");
+    let dis5=document.getElementById("signout");
+    dis5.style.display=("none");   
+}
+function nav_signout(){
+    let bg1=document.getElementById("nav-signout");
+    bg1.style.backgroundColor=("#d61c62");
+    bg1.style.color=("white");
+    let bg2=document.getElementById("nav-profile");
+    bg2.style.backgroundColor=("white");
+    bg2.style.color=("Black");
+    let bg3=document.getElementById("nav-adoption");
+    bg3.style.backgroundColor=("white");
+    bg3.style.color=("Black");
+    let bg4=document.getElementById("nav-postadoption");
+    bg4.style.backgroundColor=("white");
+    bg4.style.color=("Black");
+    let bg5=document.getElementById("nav-delete");
+    bg5.style.backgroundColor=("white");
+    bg5.style.color=("Black"); 
+    let dis1=document.getElementById("signout");
+    dis1.style.display=("block");
+    let dis2=document.getElementById("profile");
+    dis2.style.display=("none");
+    let dis3=document.getElementById("adoption");
+    dis3.style.display=("none");
+    let dis4=document.getElementById("postadoption");
+    dis4.style.display=("none");
+    let dis5=document.getElementById("deleteaccount");
+    dis5.style.display=("none");   
+}
+
